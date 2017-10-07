@@ -237,7 +237,7 @@ func main() {
 	fmt.Fprintln(ib, "+++")
 	fmt.Fprintf(ib, "title = \"%s\"\n", *title)
 	fmt.Fprintln(ib, time.Now().Format("date = \"2006-01-02\""))
-	fmt.Fprintln(ib, "categories = [\"\"\"photos\"\"\"]")
+	fmt.Fprintln(ib, "categories = [\"photos\"]")
 	fmt.Fprintf(ib, "cover = \"%s\"\n", pix[0].Filename)
 	fmt.Fprintln(ib, "+++\n")
 	fmt.Fprintln(ib, "{{< wrap >}}")
